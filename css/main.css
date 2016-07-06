@@ -1,4 +1,4 @@
-
+@import 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 .wrapper{
   width:100%;
@@ -6,25 +6,28 @@
 }
 
 .navbar{
-  position: fixed;
-  vertical-align: middle;
+  position: absolute;
+  display: inline-block;
   float:left;width:30%;height:100%;
   background-color: #32325b;
 }
-.navbar img{
+.dropbox{width:50%;}
+.dropbox img{
+  vertical-align: middle;
+  width:80px;height:60px;
   position: absolute;
-  top:5%;
-  left:25%;
-  width:80px;height:60px;}
+  top: 10%;left: 10%;
+}
 .menu{
-  position: absolute;
-  top:20%;left:25%;
+  position: absolute;top: 25%;
+  vertical-align: middle;
   list-style: none;
   clear: both;
   margin: 0;padding: 0;
   }
 .menu li {
-  text-align: center;
+  line-height: 200%;
+  text-align: left;padding-left: 10px;
 }
 .menu li a:hover {
 }
@@ -35,6 +38,25 @@
   padding: 14px 6px;}
 
 .main-content{
-  float:left;width:80%;height:100%;
+  float:left;
+  width:80%;height:100%;
   background-color: #fff;
+}
+.photo-icons{
+  position: fixed;
+  top:8%;left:32%;
+  color:lightblue;
+}
+.titles{
+  font-family: 'Source Sans Pro', sans-serif;
+  position: fixed;
+  top:8%;right:2%;
+  color:#4b3939;
+}
+.titles span:hover{
+  background-color: #4b3939;
+  color:#fff;
+}
+.gallery{position: absolute;
+  top:10%; left:32%;
 }
